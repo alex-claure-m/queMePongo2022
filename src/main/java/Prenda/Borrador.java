@@ -25,10 +25,7 @@ public class Borrador {
         this.validarColorSecundario(colorSecundario);
         this.colorSecundario = colorSecundario;
     }
-    public void telaDeLaPrenda(Tela unaTela){
-        this.validarTela(tela);
-        this.tela=tela;
-    }
+
     public boolean validarQueNoSeaNulo(Material unMaterial) {
         return unMaterial != null;
         }
@@ -40,7 +37,7 @@ public class Borrador {
     }
 
     public Prenda crearPrenda(){
-        return new Prenda(tipoPrenda,material,colorPirmario,colorSecundario,tela);
+        return new Prenda(tipoPrenda,material,colorPirmario,colorSecundario);
         }
     }
 
